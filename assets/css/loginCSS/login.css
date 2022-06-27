@@ -29,7 +29,20 @@ body {
     border-radius: 20px;
     height: 30px;
     padding: 10px;
+    font-family: "FontAwesome", Open Sans, Arial;
 }
+#box_icone_busca{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    position: relative;
+    left: -300px;
+    top: 5px;
+  }
+  #icone_busca {
+    color: #000;
+    cursor: pointer;
+  }
 /*SECTION LOGIN */
 .section_login {
     display: flex;

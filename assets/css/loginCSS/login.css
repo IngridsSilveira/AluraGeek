@@ -1,0 +1,120 @@
+:root {
+    --botoes: #2A7AE4;
+    --background-azul: #EAF2FD;
+    --background-cinza: #E5E5E5;
+    --background-branco: #ffffff;
+    --input-pesquisa: #F5F5F5;
+    --textos: #464646;
+    --fontes: 'Raleway', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fontes);
+    color: var(--textos);
+    overflow-x: hidden;
+}
+/*HEADER */
+.header {
+    background: var(--background-branco);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.input_search {
+    background-color: var(--background-cinza);
+    border: none;
+    width: 250px;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+/*SECTION LOGIN */
+.section_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-cinza);
+    width: 100%;
+    padding: 40px 0;
+    height: auto;
+}
+.titulo_padrao {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.input_login {
+    height: 45px;
+    margin: 10px 0;
+    border: none;
+}
+.btn {
+    height: 45px;
+    font-size: .8rem;
+    color: var(--background-branco);
+    background-color: var(--botoes);
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #1762c4;
+}
+/* SECTION CONTATO */
+.contato {
+    background-color: var(--background-azul);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+.fale_conosco {
+    display: flex;
+    flex-direction: column;
+}
+.lista_contato {
+    list-style: none;
+    margin: 0 40px;
+}
+.lista_item {
+    font-size: 1rem;
+    line-height: 1.7;
+    cursor: pointer;
+    color: var(--textos);
+}
+.lista_item:hover {
+    color: #333;
+}
+.input_contato {
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+}
+.textarea_contato {
+    height: 60px;
+    margin-bottom: 15px;
+}
+.btn_contato {
+    width: 150px;
+}
+/* FOOTER */
+.rodape {
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+.link {
+    color: var(--textos);
+    text-decoration: none;
+}
+.link:hover {
+    color: var(--botoes);
+    text-decoration: underline;
+}

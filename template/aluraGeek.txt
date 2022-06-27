@@ -1,0 +1,6 @@
+--botoes: #2A7AE4;
+--background-azul: #EAF2FD;
+--background-cinza: #E5E5E5;
+--background-branco: #ffffff;
+--input-pesquisa: #F5F5F5;
+--textos: #464646;

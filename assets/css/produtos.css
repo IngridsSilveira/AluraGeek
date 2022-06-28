@@ -1,3 +1,4 @@
+/* PARTE DE ADICIONAR OS PRODUTOS*/
 .btn_header {
     background-color: white;
     color: var(--botoes);
@@ -25,12 +26,51 @@
 .titulo_padrao {
     font-weight: 700;
     font-size: 1.2rem;
+    letter-spacing: 1.2px;
 }
 .input_produtos {
     height: 45px;
     margin: 10px 0;
     border: none;
 }
+/* PARTE DOS PRODUTOS HOME */
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.produtos_textos{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.produtos_textos .btn_produtos {
+    width: 200px;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+}
+.produtos_itens{
+    margin: 10px;
+}
+.images_produto {
+    width: 100%;
+    height: auto;
+    letter-spacing: 1.2px;
+}
+.produtos_titulo {
+    line-height: 2;
+    font-size: .9rem;
+    font-weight: normal;
+}
+.produtos_preco {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
     .header {

@@ -1,0 +1,45 @@
+/*SECTION LOGIN */
+.section_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-cinza);
+    width: 100%;
+    padding: 40px 0;
+    height: auto;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.titulo_padrao {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.input_login {
+    height: 45px;
+    margin: 10px 0;
+    border: none;
+}
+/* RESPONSIO ESPECIFICO */
+@media screen and (min-width: 0) {
+    .input_login,
+    .btn_login {
+        width: 200px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .input_login,
+    .btn_login {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .input_login {
+        width: 340px;
+    }
+    .btn_login {
+        width: 345px;
+    }
+}

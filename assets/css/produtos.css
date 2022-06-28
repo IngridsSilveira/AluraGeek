@@ -1,0 +1,71 @@
+.btn_header {
+    background-color: white;
+    color: var(--botoes);
+    border: 1.5px solid var(--botoes);
+    width: 200px;
+    font-size: .9rem;
+}
+.btn_header:hover {
+    color: white;
+}
+.section_produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-cinza);
+    width: 100%;
+    padding: 40px 0;
+    height: auto;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.titulo_padrao {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.input_produtos {
+    height: 45px;
+    margin: 10px 0;
+    border: none;
+}
+/* RESPONSIO ESPECIFICO */
+@media screen and (min-width: 0) {
+    .header {
+        justify-content: space-around;
+    }
+    #box_icone_busca{
+        left: 345px;
+    } 
+    .btn_header {
+        width: 120px;
+        font-size: .7rem;
+    }
+    .input_produtos,
+    .btn_produtos {
+        width: 200px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .input_produtos,
+    .btn_produtos {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .btn_header {
+        width: 200px;
+        font-size: .9rem;
+    }
+    #box_icone_busca{
+        left: 770px;
+    } 
+    .input_produtos {
+        width: 400px;
+    }
+    .btn_produtos {
+        width: 405px;
+    }
+}

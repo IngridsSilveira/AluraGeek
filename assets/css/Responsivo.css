@@ -2,14 +2,16 @@
     .logo {
         margin: 0;
     }
+    .header {
+        justify-content: space-between;
+    }
     .input_search {
         display: none;
         margin: 0;
     }
-    .input_login,
-    .btn_login {
-        width: 200px;
-    }
+    #box_icone_busca{
+        left: 280px;
+    }  
     .contato {
         flex-direction: column;
         justify-content: center;
@@ -33,15 +35,17 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-around;
+    }
+    #box_icone_busca{
+        display: none;
+    }
     .input_search {
         display: block;
     }
     .contato {
         justify-content: space-around;
-    }
-    .input_login,
-    .btn_login {
-        width: 300px;
     }
 }
 
@@ -49,17 +53,16 @@
     .header {
         justify-content: space-around;
     }
+    #box_icone_busca{
+        left: 1060px;
+        top: 20px;
+        display: block;
+    }    
     .contato {
         flex-direction: row;
     }
     div .logo {
         margin-bottom: 100px;
-    }
-    .input_login {
-        width: 340px;
-    }
-    .btn_login {
-        width: 345px;
     }
     .input_contato {
         width: 400px;

@@ -1,3 +1,4 @@
+@import '../css/Responsivo.css';
 :root {
     --botoes: #2A7AE4;
     --background-azul: #EAF2FD;
@@ -21,11 +22,12 @@ body {
     align-items: center;
     width: 100%;
     height: 80px;
+    position: relative;
 }
 .input_search {
     background-color: var(--background-cinza);
     border: none;
-    width: 250px;
+    width: 350px;
     border-radius: 20px;
     height: 30px;
     padding: 10px;
@@ -35,34 +37,13 @@ body {
     width: 30px;
     height: 30px;
     padding: 10px;
-    position: relative;
-    left: -300px;
-    top: 5px;
+    position: absolute;
   }
   #icone_busca {
     color: #000;
     cursor: pointer;
   }
-/*SECTION LOGIN */
-.section_login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-cinza);
-    width: 100%;
-    padding: 40px 0;
-    height: auto;
-}
-.titulo_padrao {
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-.input_login {
-    height: 45px;
-    margin: 10px 0;
-    border: none;
-}
+/* BOTOES */
 .btn {
     height: 45px;
     font-size: .8rem;
@@ -74,7 +55,7 @@ body {
 .btn:hover {
     background-color: #1762c4;
 }
-/* SECTION CONTATO */
+  /* SECTION CONTATO */
 .contato {
     background-color: var(--background-azul);
     display: flex;

@@ -35,31 +35,25 @@
 }
 /* PARTE DOS PRODUTOS HOME */
 .container {
-    width: 90%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
 }
 .produtos_textos{
-    width: 88%;
+    width: 95.7%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .produtos_textos .btn_produtos {
     width: 200px;
     font-size: 1rem;
     letter-spacing: 1.2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .produtos_itens{
-    margin: 10px;
-}
-.images_produto {
-    width: 100%;
-    height: auto;
-    letter-spacing: 1.2px;
+    margin: 5px;
+    position: relative;
 }
 .produtos_titulo {
     line-height: 2;
@@ -69,10 +63,24 @@
 .produtos_preco {
     font-size: 1rem;
     font-weight: 600;
+    margin-bottom: 30px;
 }
-
+.modificarItem {
+    position: absolute;
+    top: 10px;
+    display: flex;
+}
+.images_modificarItem {
+    margin-left: 25px;
+}
+.images_modificarItem:first-child {
+    margin-left: 0;
+}
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
+    .header {
+        background-color: blue;
+    }
     .header {
         justify-content: space-around;
     }
@@ -87,11 +95,49 @@
     .btn_produtos {
         width: 200px;
     }
+    /*PRODUTOS HOME */
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+        margin-left: 20px;
+    }
+    .images_produto {
+        width: auto;
+    }
+    .produtos_textos {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .titulo_produtos {
+        margin-bottom: 10px;
+    }
+    .modificarItem {
+        left: 110px;
+    }
 }
 @media screen and (min-width: 768px) {
     .input_produtos,
     .btn_produtos {
         width: 300px;
+    }
+    /*PRODUTOS HOME */
+    .container {
+        flex-wrap: wrap;
+        width: 800px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+    .produtos_textos {
+        margin-right: 25px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .modificarItem {
+        left: 110px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -107,5 +153,19 @@
     }
     .btn_produtos {
         width: 405px;
+    }
+    /*PRODUTOS HOME */
+    .container {
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .images_produto {
+        width: 100%;
+        height: auto;
+    }
+    .produtos_textos,
+    .titulo_produtos {
+        margin: 0;
     }
 }

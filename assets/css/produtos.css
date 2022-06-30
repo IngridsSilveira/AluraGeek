@@ -79,23 +79,24 @@
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
     .header {
-        background-color: blue;
-    }
-    .header {
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     #box_icone_busca{
-        left: 345px;
+        left: 400px;
     } 
     .btn_header {
         width: 120px;
         font-size: .7rem;
+        margin-left: 50px;
     }
     .input_produtos,
     .btn_produtos {
         width: 200px;
     }
     /*PRODUTOS HOME */
+    .hidden {
+        visibility: hidden;
+    }
     .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -119,11 +120,17 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-around;
+    }
     .input_produtos,
     .btn_produtos {
         width: 300px;
     }
     /*PRODUTOS HOME */
+    .hidden {
+        visibility: hidden;
+    }
     .container {
         flex-wrap: wrap;
         width: 800px;
@@ -146,7 +153,7 @@
         font-size: .9rem;
     }
     #box_icone_busca{
-        left: 770px;
+        left: 740px;
     } 
     .input_produtos {
         width: 400px;

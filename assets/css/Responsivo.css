@@ -10,7 +10,8 @@
         margin: 0;
     }
     #box_icone_busca{
-        left: 280px;
+        left: 420px;
+        top: 25px;
     }  
     .contato {
         flex-direction: column;

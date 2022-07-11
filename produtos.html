@@ -25,13 +25,30 @@
         <button class="btn btn_header">Menu administrador</button>
     </header>
         <section class="section_produtos">
-            <form class="form" action="">
+            <form class="form" action="#">
                 <h2 class="titulo_padrao">Adicionar novo produto</h2>
-                <input class="input_produtos" name="urlProdutos" type="url" placeholder="URL da imagem" required>
-                <input class="input_produtos" name="categoria" type="text" placeholder="Categoria" required>
-                <input class="input_produtos" name="nomeProdutos" type="text" placeholder="Nome do produto" required>
-                <input class="input_produtos" name="precoProdutos" type="number" placeholder="Preço do produto" required>
-                <input class="input_produtos" name="descricaoProdutos" type="text" placeholder="Descrição do produto" required>
+
+                <div class="input-container">
+                    <label class="label" for="arquivo">Adicionar imagem</label>
+                    <input name="arquivo" id="arquivo" type="file" class="input_button" >
+                </div>
+
+                <div class="input-container">
+                    <input class="input" minlength="20" name="nomeProdutos" type="text" placeholder="Nome do produto"
+                    data-tipo="nomeProdutos"  required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-container">
+                    <input class="input" name="precoProdutos" type="number" placeholder="Preço do produto" data-tipo="preco" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-container">
+                    <input class="input" minlength="150" name="descricaoProdutos" type="text" placeholder="Descrição do produto" data-tipo="descricao" required>
+                    <span class="error"></span>
+                </div>
+
                 <input class="btn btn_produtos" type="submit" value="Adicionar produto">
             </form>
         </section>

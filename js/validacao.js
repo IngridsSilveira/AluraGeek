@@ -30,6 +30,15 @@ const mensagensDeErro = {
     },
     senha: {
         valueMissing: 'A senha não pode ser vazia.'
+    },
+    nomeProdutos: {
+        valueMissing: 'O nome do produto não pode ser vazio.'
+    },
+    preco: {
+        valueMissing: 'O preço não pode ser vazio.'
+    },
+    descricao: {
+        valueMissing: 'A descrição não pode ser vazia.'
     }
 }
 const validadores = {

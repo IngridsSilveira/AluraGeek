@@ -1,4 +1,17 @@
 /* PARTE DE ADICIONAR OS PRODUTOS*/
+input[type="file"] {
+    display: none;
+}
+.label {
+    padding: 20px 10px;
+    background-color: #fff;
+    color: var(--botoes);
+    border: 1.5px solid var(--botoes);
+    width: 180px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
 .btn_header {
     background-color: white;
     color: var(--botoes);
@@ -28,7 +41,7 @@
     font-size: 1.2rem;
     letter-spacing: 1.2px;
 }
-.input_produtos {
+.input {
     height: 45px;
     margin: 10px 0;
     border: none;
@@ -93,7 +106,7 @@
         font-size: .7rem;
         margin-left: 50px;
     }
-    .input_produtos,
+    .input,
     .btn_produtos {
         width: 200px;
     }
@@ -127,7 +140,7 @@
     .header {
         justify-content: space-around;
     }
-    .input_produtos,
+    .input,
     .btn_produtos {
         width: 300px;
     }
@@ -159,7 +172,7 @@
     #box_icone_busca{
         left: 740px;
     } 
-    .input_produtos {
+    .input {
         width: 400px;
     }
     .btn_produtos {

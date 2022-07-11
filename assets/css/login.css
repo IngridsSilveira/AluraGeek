@@ -17,26 +17,34 @@
     font-weight: 700;
     font-size: 1.2rem;
 }
-.input_login {
+.input {
     height: 45px;
     margin: 10px 0;
     border: none;
 }
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.input-container--invalido {
+    border: 1px solid red;
+    padding: 5px;
+}
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
-    .input_login,
+    .input,
     .btn_login {
         width: 200px;
     }
 }
 @media screen and (min-width: 768px) {
-    .input_login,
+    .input,
     .btn_login {
         width: 300px;
     }
 }
 @media screen and (min-width: 992px) {
-    .input_login {
+    .input {
         width: 340px;
     }
     .btn_login {

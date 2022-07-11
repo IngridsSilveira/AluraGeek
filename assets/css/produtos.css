@@ -72,6 +72,10 @@
 }
 .images_modificarItem {
     margin-left: 25px;
+    cursor: pointer;
+}
+.images_modificarItem:hover {
+    transform: scale(1.5);
 }
 .images_modificarItem:first-child {
     margin-left: 0;

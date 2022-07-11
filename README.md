@@ -14,7 +14,7 @@ Feito totalmente com HTML/CSS.
 
 ### Screenshot
 
-![](../AluraGeek/assets/images_readme/Alura-Geek-Home.png)
+![](../AluraGeek/assets/images_readme/Alura-Geek-Home.png),
 ![](../AluraGeek/assets/images_readme/Produtos-Home.png)
 ![](../AluraGeek/assets/images_readme/Produtos.png)
 ![](../AluraGeek/assets/images_readme/Login.png)

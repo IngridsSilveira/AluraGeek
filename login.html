@@ -23,10 +23,19 @@
         </span>
     </header>
         <section class="section_login">
-            <form class="form" action="">
+            <form class="form" action="./produtos.html" method="post">
                 <h2 class="titulo_padrao">Iniciar Sessão</h2>
-                <input class="input_login" name="email" type="email" placeholder="Escreva seu email" required>
-                <input class="input_login" name="senha" type="password" placeholder="Escreva sua senha" required>
+                
+                <div class="input-container">
+                    <input class="input" name="email" id="email" type="email" placeholder="Escreva seu email" data-tipo="email" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-container">
+                    <input class="input" id="senha" name="senha" type="password" placeholder="Escreva sua senha" data-tipo="senha" required minlength="6">
+                    <span class="error"></span>
+                </div>
+
                 <input class="btn btn_login" type="submit" value="Entrar">
             </form>
         </section>
@@ -42,15 +51,22 @@
                 <li class="lista_item">Anuncie aqui</li>
             </ul>
         </div>
-            <form class="fale_conosco">
+            <form class="fale_conosco" action="#">
                 <h2 class="titulo_padrao">Fale conosco</h2>
-                <input class="input_contato" name="nome" type="text" placeholder="Nome" required>
-                <textarea class="textarea_contato" name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                <div class="input-container">
+                    <input class="input_contato" name="nome" type="text" placeholder="Nome" minlength="40" data-tipo="nome" required>
+                    <span class="error"></span>
+                </div>
+                <div class="input-container">
+                    <input class="textarea_contato" name="mensagem" id="mensagem" data-tipo="mensagem" minlength="120" placeholder="Escreva sua mensagem" required>
+                    <span class="error"></span>
+                </div>
                 <input class="btn btn_contato" type="submit" value="Enviar mensagem">
             </form>
         </section>
         <footer class="rodape">
             <p>Desenvolvido por <a class="link" href="https://ingridssilveira.github.io/IngridSouza/">Ingrid de Souza</a> 🔥</p>
         </footer>
+        <script src="js/app.js" type="module"></script>
 </body>
 </html>

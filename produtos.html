@@ -28,9 +28,19 @@
             <form class="form" action="#">
                 <h2 class="titulo_padrao">Adicionar novo produto</h2>
 
-                <div class="input-container">
-                    <label draggable="true" class="label" for="arquivo">Adicionar imagem</label>
-                    <input name="arquivo" id="arquivo" type="file" class="input_button" >
+                <div class="input-container input_file">
+                    <div class="picture__input">
+                        <img src="assets/images/icone-d-image-grise.png" alt="icone de imagem" class="img_input">
+                        <label tabIndex="0" class="picture">
+                            <input type="file" class="picture_input" id="picture__input">
+                            <span class="picture_image"></span>
+                        </label>
+                    </div>
+                    Ou
+                    <div class="button_input">
+                        <label class="label" for="arquivo">Adicionar imagem</label>
+                        <input name="arquivo" id="arquivo" type="file" class="input_button" >
+                    </div>
                 </div>
 
                 <div class="input-container">
@@ -81,5 +91,6 @@
             <p>Desenvolvido por <a class="link" href="https://ingridssilveira.github.io/IngridSouza/">Ingrid de Souza</a> 🔥</p>
         </footer>
         <script src="js/app.js" type="module"></script>
+        <script src="js/inputFile.js"></script>
 </body>
 </html>

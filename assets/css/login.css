@@ -32,22 +32,24 @@
 }
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
+    .form,
     .input,
     .btn_login {
-        width: 200px;
+        width: auto;
     }
 }
 @media screen and (min-width: 768px) {
     .input,
     .btn_login {
-        width: 300px;
+        width: auto;
     }
 }
 @media screen and (min-width: 992px) {
-    .input {
-        width: 340px;
+    .form {
+        width: 400px;
     }
+    .input,
     .btn_login {
-        width: 345px;
+        width: 100%;
     }
 }

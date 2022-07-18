@@ -11,12 +11,12 @@ function pesquisa(){
         }
         //ESTE ELSE É PARA QUANDO O PRODUTO FOR ENCONTRADO
         else {
-            produtos[i].style.backgroundColor = 'black';           
+            //ESTE É O CÓDIGO PARA COLOCAR UMA COR NO PRODUTO ENCONTRADO//
+            produtos[i].style.backgroundColor = '#ccc';
         }
     }
     return pesquisa;
 }
-
 //FUNÇÃO PARA REDIRECINAR OS USUÁRIOS PARA AS TELAS DE PRODUTOS//
 function redirecionar(){
     window.location.href = 'produtosHome.html'

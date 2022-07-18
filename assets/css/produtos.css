@@ -120,6 +120,17 @@ input[type="file"] {
 .images_modificarItem:first-child {
     margin-left: 0;
 }
+.deletar {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.editar {
+    background: none;
+    border: none;
+    margin: -2px 25px;
+}
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
     .header {

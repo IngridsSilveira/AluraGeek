@@ -1,10 +1,12 @@
-var produtosItens = document.querySelectorAll('.produtos_itens');
 const botaoDeletar = document.querySelector('.deletar');
 
-    for (i = 0; i < produtosItens.length; i++) { 
-        produtosItens[i].addEventListener('click', (evento)=>{
-            evento.target.parentElement.remove();
+function deletar(){
+    var produtosItens = document.querySelectorAll('.produtos_itens');
+        for(let i = 0; i < produtosItens.length; i++){
+            if(!produtosItens[i]){
+            console.log(produtosItens)
+            }else {
+               console.log(produtosItens[i]);
+            }
         }
-        ) 
-    }
-console.log(produtosItens);
+}

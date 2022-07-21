@@ -1,3 +1,5 @@
+ //ESTE SELECIONA OS ITENS//
+const produtosItens = document.querySelectorAll('.produtos_itens');
 //REPONSÁVEL PELO BOTÃO DE DELETAR//
 document.querySelectorAll('.deletar').forEach(function(button){
     button.addEventListener("click", function(event){
@@ -6,9 +8,6 @@ document.querySelectorAll('.deletar').forEach(function(button){
 
         //ESTE PEGA O ID DO ITEM, NO CASO DO PARENTE DELE//
         const id = el.parentNode.parentNode.parentNode.id;  
-
-        //ESTE SELECIONA OS ITENS//
-        const produtosItens = document.querySelectorAll('.produtos_itens');
 
             //CÓDIGO QUE PERCORRE O ARRAY E O ITEM PELO ID E AO CLICAR NO BOTÃO DELETA O ITEM//
             for(let i = 0; i < produtosItens.length; i++){
@@ -24,8 +23,6 @@ document.querySelectorAll('.editar').forEach(function(button){
         const el = event.target;
 
         const id = el.parentNode.parentNode.parentNode.id;  
-
-        const produtosItens = document.querySelectorAll('.produtos_itens');
 
             for(let i = 0; i < produtosItens.length; i++){
                 if(produtosItens[i].id == id){

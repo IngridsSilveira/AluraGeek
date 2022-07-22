@@ -4,7 +4,7 @@ Este é o segundo sprint do treinamento em frontEnd da Alura, com parceria com a
 
 Neste sprint foi proposto que fizéssemos um site e-commerce, com alguns produtos, login, informações e uma forma de entrar em contato.
 
-Feito totalmente com HTML/CSS.
+Feito totalmente com HTML/CSS e estou adicionando o Javascript.
 
 ## Table of contents
 
@@ -14,9 +14,13 @@ Feito totalmente com HTML/CSS.
 
 ### Screenshot
 
-![](../AluraGeek/assets/images_readme/Alura-Geek-Home.png),
+# Página inicial
+![](../AluraGeek/assets/images_readme/Alura-Geek-Home.png)
+# Produtos
 ![](../AluraGeek/assets/images_readme/Produtos-Home.png)
+# Adicionar produtos
 ![](../AluraGeek/assets/images_readme/Produtos.png)
+# Login
 ![](../AluraGeek/assets/images_readme/Login.png)
 
 ### Links

@@ -15,13 +15,13 @@ Feito totalmente com HTML/CSS e estou adicionando o Javascript.
 ### Screenshot
 
 # Página inicial
-![](../AluraGeek/assets/images_readme/Alura-Geek-Home.png)
+![](./assets/images_readme/Alura-Geek-Home.png)
 # Produtos
-![](../AluraGeek/assets/images_readme/Produtos-Home.png)
+![](./assets/images_readme/Produtos-Home.png)
 # Adicionar produtos
-![](../AluraGeek/assets/images_readme/Produtos.png)
+![](./assets/images_readme/Produtos.png)
 # Login
-![](../AluraGeek/assets/images_readme/Login.png)
+![](./assets/images_readme/Login.png)
 
 ### Links
 

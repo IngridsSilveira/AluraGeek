@@ -31,7 +31,7 @@
         font-size: .9rem;
     }
     .input_contato {
-        width: 250px;
+        width: auto;
     }
     .rodape {
         font-size: .8rem;
@@ -85,7 +85,7 @@
         margin-bottom: 100px;
     }
     .input_contato {
-        width: 400px;
+        width: auto;
     }
     .info {
         flex-direction: row;

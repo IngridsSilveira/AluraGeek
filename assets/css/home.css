@@ -68,15 +68,21 @@
     .textos_home {
         width: 300px;
     }
-    .container {
-        width: 400px;
-        margin-bottom: 20px;
-    }
-    .produtos_home {
-        margin: 10px;
-    }
     .invisible {
         display: none;
+    }
+    div {
+        width: 200px;
+    }
+    .produtos_home {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .sessao_produtos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 400px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -89,8 +95,10 @@
     .textos_home {
         width: 740px;
     }
-    .container {
-        width: 800px;
+    .sessao_produtos {
+        display: flex;
+        flex-direction: column;
+        width: auto;
     }
     .invisible {
         display: none;
@@ -116,5 +124,11 @@
     }
     .invisible {
         display: block;
+    }
+    .sessao_produtos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 1200px;
     }
 }

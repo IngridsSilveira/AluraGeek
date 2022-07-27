@@ -1,0 +1,52 @@
+{
+    "produtos": [
+        {
+            "id": 0,
+            "nome": "Caneca Star Wars",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars01.png"
+        },
+        {
+            "id": 1,
+            "nome": "Figure Darth Vader",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars02.png"
+        },
+        {
+            "id": 2,
+            "nome": "Figure Mestre Yoda",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars03.png"
+        },
+        {
+            "id": 3,
+            "nome": "Figure Stormtroopper",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars04.png"
+        },
+        {
+            "id": 4,
+            "nome": "Figure Grogu",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars05.png"
+        },
+        {
+            "id": 5,
+            "nome": "Figure Kylo Ren",
+            "price": "R$60.00",
+            "section": "starWars",
+            "alt": "Product",
+            "imageUrl": "./assets/images/starWars/starWars06.png"
+        }
+    ]
+}

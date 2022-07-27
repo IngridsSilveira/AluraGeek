@@ -1,0 +1,20 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "E-commerce do alura geek",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "type": "module",
+    "url": "git+https://github.com/IngridsSilveira/AluraGeek.git"
+  },
+  "author": "Ingrid Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IngridsSilveira/AluraGeek/issues"
+  },
+  "homepage": "https://github.com/IngridsSilveira/AluraGeek#readme"
+}

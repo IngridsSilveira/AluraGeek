@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../AluraGeek/assets/css/reset.css">
-    <link rel="stylesheet" href="../AluraGeek/assets/css/style.css">
-    <link rel="stylesheet" href="../AluraGeek/assets/css/home.css">
-    <link rel="stylesheet" href="../AluraGeek/assets/css/Responsivo.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/Responsivo.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" target="_blank"><img class="logo" src="../AluraGeek/assets/images/logo.png" alt="logo do alurageek"></a>
+        <a href="index.html" target="_blank"><img class="logo" src="/assets/images/logo.png" alt="logo do alurageek"></a>
         
         <div class="search-box">
             <input class="input_search" type="text" placeholder="O que deseja encontrar?"
@@ -41,132 +41,22 @@
                 <h2 class="titulo_padrao">Star Wars</h2>
                 <a href="produtosHome.html" target="_blank"  class="links">Ver tudo <img class="seta" src="assets/images/seta.png"> </a>
             </div>
-            <div class="container">
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/starWars/starWars01.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Caneca Star Wars</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/starWars/starWars02.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Figure Darth Vader</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/starWars/starWars03.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Figure Mestre Yoda</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/starWars/starWars04.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Figure Stormtroopper</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/starWars/starWars05.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Figure Grogu</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/starWars/starWars06.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Figure Kylo Ren</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
+            <section class="sessao_produtos" data-product>
+            </section>
+            <div class="textos_home" id="consoles">
+                <h2 class="titulo_padrao">Consoles</h2>
+                <a href="produtosHome.html" target="_blank"  class="links">Ver tudo <img class="seta" src="assets/images/seta.png"> </a>
             </div>
-            <div class="textos_home">
-                <h2 class="titulo_padrao" id="consoles">Consoles</h2>
-                <a href="produtosHome.html" target="_blank"  class="links">Ver tudo <img class="seta" src="assets/images/seta.png"></a>
-            </div>
-            <div class="container">
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/consoles/controle.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Controle Xbox One</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/consoles/controleConsole.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Console Xbox One</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/consoles/console.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Console Nintendo</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/consoles/controleNintendo.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Nintendo Switch</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/consoles/consolePreto.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Console Playstation</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/consoles/gameBoy.png">
-                            <h3 class="produtos_titulo" data-nome-produto>Game Boy</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-            </div>
+            <section class="sessao_produtos" data-product></section>
             <div class="textos_home">
                 <h2 class="titulo_padrao">Diversos</h2>
-                <a href="produtosHome.html" target="_blank" class="links">Ver tudo <img class="seta" src="assets/images/seta.png"></a>
+                <a href="produtosHome.html" target="_blank"  class="links">Ver tudo <img class="seta" src="assets/images/seta.png"> </a>
             </div>
-            <div class="container">
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/diversos/camisa.png">
-                            <h3 class="titulo_home" data-nome-produto>Camisa Atari</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/diversos/camisaSNES.png">
-                            <h3 class="titulo_home" data-nome-produto>Camisa SNES</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/diversos/sonic.png">
-                            <h3 class="titulo_home" data-nome-produto>Sonic</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home">
-                        <img class="images_home" src="assets/images/diversos/controleConsole01.png">
-                            <h3 class="titulo_home" data-nome-produto>Rádio XYZ</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/diversos/controleConsole02.png">
-                            <h3 class="titulo_home" data-nome-produto>Óculos VR</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-                <div class="produtos_home invisible">
-                        <img class="images_home" src="assets/images/diversos/controleConsole03.png">
-                            <h3 class="titulo_home" data-nome-produto>Pikachu</h3>
-                            <p class="preco_home">R$ 60,00</p>
-                            <a href="#" class="links link">Ver produto</a>
-                </div>
-            </div>
+            <section class="sessao_produtos" data-product></section>
         </section>
         <section class="contato">
         <div class="info">
-            <img class="logo" src="../AluraGeek/assets/images/logo.png" alt="logo do alurageek">
+            <img class="logo" src="/assets/images/logo.png" alt="logo do alurageek">
             <ul class="lista_contato">
                 <li class="lista_item">Quem somos nós</li>
                 <li class="lista_item">Política de privacidade</li>
@@ -194,5 +84,6 @@
         </footer>
         <script src="js/app.js" type="module"></script>
         <script src="js/barraPesquisa.js"></script>
+        <script src="js/controllers/produtos-controller.js" type="module"></script>
 </body>
 </html>

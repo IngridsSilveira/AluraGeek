@@ -29,6 +29,10 @@
     text-decoration: underline;
 }
 /* PARTE DOS PRODUTOS */
+.sessao_produtos {
+    display: flex;
+    flex-direction: row;
+}
 .textos_home {
     display: flex;
     justify-content: space-between;
@@ -36,13 +40,12 @@
 }
 .titulo_home {
     font-weight: normal;
-    margin-top: 10px;
     font-size: .9rem;
 }
 .preco_home {
     font-weight: bold;
-    line-height: 2;
     font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 .seta {

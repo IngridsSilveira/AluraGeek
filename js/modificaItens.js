@@ -31,9 +31,3 @@ document.querySelectorAll('.editar').forEach(function(button){
             }
     })
 })
-
-//ADICIONA OS ITENS//
-document.querySelector(".btn_produtos").addEventListener("click", function(event){
-    const clicado = event.target
-    console.log('fui clicado');
-})

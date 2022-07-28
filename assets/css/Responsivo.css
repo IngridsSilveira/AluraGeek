@@ -85,7 +85,7 @@
         margin-bottom: 100px;
     }
     .input_contato {
-        width: auto;
+        width: 500px;
     }
     .info {
         flex-direction: row;

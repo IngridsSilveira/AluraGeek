@@ -1,7 +1,7 @@
 //RESPONSÁVEL PELO BOTÃO DE ADICIONAR NOVAS IMAGENS//
 const inputFile = document.querySelector('#picture__input');
 const pictureImage = document.querySelector('.picture_image');
-const pictureImageTxt = 'Arraste para adicionar uma imagem';
+const pictureImageTxt = 'Clique para adicionar uma imagem';
 pictureImage.innerHTML = pictureImageTxt;
 
 inputFile.addEventListener('change', function(e){

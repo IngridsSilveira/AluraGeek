@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/produtos.css">
-    <link rel="stylesheet" href="/assets/css/Responsivo.css">
+    <link rel="stylesheet" href="./assets/css/Responsivo.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,37 +31,31 @@
         <button class="btn btn_header">Menu administrador</button>
     </header>
         <section class="section_produtos">
-            <form class="form" action="#">
+            <form class="form" data-form>
                 <h2 class="titulo_padrao">Adicionar novo produto</h2>
 
                 <div class="input-container input_file">
                     <div class="picture__input">
                         <img src="assets/images/icone-d-image-grise.png" alt="icone de imagem" class="img_input">
                         <label tabIndex="0" class="picture">
-                            <input type="file" class="picture_input" id="picture__input">
+                            <input type="file" class="picture_input" id="picture__input" data-image required>
                             <span class="picture_image"></span>
                         </label>
                     </div>
-                    Ou
-                    <div class="button_input">
-                        <label class="label" for="arquivo">Adicionar imagem</label>
-                        <input name="arquivo" id="arquivo" type="file" class="input_button" >
-                    </div>
                 </div>
-
                 <div class="input-container">
                     <input class="input" minlength="20" name="nomeProdutos" type="text" placeholder="Nome do produto"
-                    data-tipo="nomeProdutos"  required>
+                    data-tipo="nomeProdutos"  required data-nome>
                     <span class="error"></span>
                 </div>
 
                 <div class="input-container">
-                    <input pattern="[0-9]*" class="input" name="precoProdutos" type="number" placeholder="Preço do produto" data-tipo="preco" required>
+                    <input pattern="[0-9]*" class="input" name="precoProdutos" type="number" placeholder="Preço do produto" data-tipo="preco" required data-price>
                     <span class="error"></span>
                 </div>
 
                 <div class="input-container">
-                    <input class="input" minlength="150" name="descricaoProdutos" type="text" placeholder="Descrição do produto" data-tipo="descricao" required>
+                    <input class="input" minlength="150" name="descricaoProdutos" type="text" placeholder="Descrição do produto" data-tipo="descricao" data-descricao>
                     <span class="error"></span>
                 </div>
 
@@ -101,5 +95,6 @@
         <script src="js/inputFile.js"></script>
         <script src="js/barraPesquisa.js"></script>
         <script src="js/modificaItens.js"></script>
+        <script src="js/controllers/criarProdutos-controller.js" type="module"></script>
 </body>
 </html>

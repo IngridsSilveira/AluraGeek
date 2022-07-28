@@ -36,7 +36,8 @@
 .textos_home {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin: 20px 0;
+
 }
 .titulo_home {
     font-weight: normal;
@@ -70,9 +71,6 @@
     }
     .invisible {
         display: none;
-    }
-    div {
-        width: 200px;
     }
     .produtos_home {
         width: 200px;

@@ -1,52 +1,166 @@
 {
-    "produtos": [
-        {
-            "id": 0,
-            "nome": "Caneca Star Wars",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars01.png"
-        },
-        {
-            "id": 1,
-            "nome": "Figure Darth Vader",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars02.png"
-        },
-        {
-            "id": 2,
-            "nome": "Figure Mestre Yoda",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars03.png"
-        },
-        {
-            "id": 3,
-            "nome": "Figure Stormtroopper",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars04.png"
-        },
-        {
-            "id": 4,
-            "nome": "Figure Grogu",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars05.png"
-        },
-        {
-            "id": 5,
-            "nome": "Figure Kylo Ren",
-            "price": "R$60.00",
-            "section": "starWars",
-            "alt": "Product",
-            "imageUrl": "./assets/images/starWars/starWars06.png"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 0,
+      "nome": "Caneca Star Wars",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars01.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 1,
+      "nome": "Figure Darth Vader",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars02.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Figure Mestre Yoda",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars03.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 3,
+      "nome": "Figure Stormtroopper",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars04.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 4,
+      "nome": "Figure Grogu",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars05.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 5,
+      "nome": "Figure Kylo Ren",
+      "price": "R$60.00",
+      "section": "starWars",
+      "alt": "Product",
+      "imageUrl": "./assets/images/starWars/starWars06.png",
+      "categoria_id": 1
+    },
+    {
+      "id": 6,
+      "nome": "Controle Xbox One",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/controle.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 7,
+      "nome": "Console Xbox One",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/controleConsole.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 8,
+      "nome": "Console Nintendo",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/console.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 9,
+      "nome": "Nintendo Switch",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/controleNintendo.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 10,
+      "nome": "Console Playstation",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/consolePreto.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 11,
+      "nome": "Game Boy",
+      "price": "R$60.00",
+      "section": "consoles",
+      "alt": "Product",
+      "imageUrl": "./assets/images/consoles/gameBoy.png",
+      "categoria_id": 2
+    },
+    {
+      "id": 12,
+      "nome": "Camisa Atari",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/camisa.png",
+      "categoria_id": 3
+    },
+    {
+      "id": 13,
+      "nome": "Camisa SNES",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/camisaSNES.png",
+      "categoria_id": 3
+    },
+    {
+      "id": 14,
+      "nome": "Sonic",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/sonic.png",
+      "categoria_id": 3
+    },
+    {
+      "id": 15,
+      "nome": "Rádio XYZ",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/controleConsole01.png",
+      "categoria_id": 3
+    },
+    {
+      "id": 16,
+      "nome": "Óculos VR",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/controleConsole02.png",
+      "categoria_id": 3
+    },
+    {
+      "id": 17,
+      "nome": "Pikachu",
+      "price": "R$60.00",
+      "section": "diversos",
+      "alt": "Product",
+      "imageUrl": "./assets/images/diversos/controleConsole03.png",
+      "categoria_id": 3
+    }
+  ]
 }

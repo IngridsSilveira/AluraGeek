@@ -1,14 +1,14 @@
 import { produtosServices } from "../services/produto-services.js";
 
-const novoProduto = (nome, price, imageUrl, section) => {
+const novoProduto = (nome, price, imageUrl) => {
     const card = document.createElement("div");
     const conteudo = `
-        <div class="produtos_home">
-           <img class="images_home" src="${imageUrl}">
-           <h3 class="produtos_titulo" data-nome-produto>${nome}</h3>
-           <p class="preco_home">${price}</p>
-           <a href="#" class="links link">Ver produto</a>
-        </div>
+            <div class="produtos_home">
+            <img class="images_home" src="${imageUrl}">
+            <h3 class="produtos_titulo" data-nome-produto>${nome}</h3>
+            <p class="preco_home">${price}</p>
+            <a href="#" class="links link">Ver produto</a>
+            </div>
     `
     card.innerHTML = conteudo
     return card

@@ -1,31 +1,60 @@
-// GET
+const link = "db.json";
 
-const listaProdutos = () => fetch("http://localhost:3000/produtos").then(resposta => resposta.json())
+const container = document.querySelector("[data-container]");
 
-//POST
+const container2 = document.querySelector("[data-container2]");
 
-const criarProdutos = (nome,imageUrl, price) => {
-    return fetch("http://localhost:3000/produtos", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            nome,
-            imageUrl,
-            price
-        })
-    })
-    .then(resposta => {
-        if (resposta.ok) {
-            return resposta.body
-        } else {
-            throw new Error("Não foi possível criar os produtos")
-        }
-    })
-}
+const container3 = document.querySelector("[data-container3]");
 
-export const produtosServices = {
-    listaProdutos,
-    criarProdutos
-}
+fetch(link).then(resposta => resposta.json())
+.then(data =>{
+  const html = data.starWars
+  .map(element =>{
+    return `
+      <div class="card" ${element.categoria}>
+            <div class="produtos_home" id="${element.id}">
+            <img class="images_home" src="${element.imageUrl}">
+            <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
+            <p class="preco_home">${element.price}</p>
+            <a href="#" class="links link">Ver produto</a>
+            </div>
+        </div>
+    `
+  }).join("");
+  container.innerHTML = html;
+})
+fetch(link).then(resposta => resposta.json())
+.then(data =>{
+  const html = data.consoles
+  .map(element =>{
+    return `
+      <div class="card" ${element.categoria}>
+            <div class="produtos_home" id="${element.id}">
+            <img class="images_home" src="${element.imageUrl}">
+            <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
+            <p class="preco_home">${element.price}</p>
+            <a href="#" class="links link">Ver produto</a>
+            </div>
+        </div>
+    `
+  }).join("");
+  container2.innerHTML = html;
+})
+
+fetch(link).then(resposta => resposta.json())
+.then(data =>{
+  const html = data.diversos
+  .map(element =>{
+    return `
+      <div class="card" ${element.categoria}>
+            <div class="produtos_home" id="${element.id}">
+            <img class="images_home" src="${element.imageUrl}">
+            <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
+            <p class="preco_home">${element.price}</p>
+            <a href="#" class="links link">Ver produto</a>
+            </div>
+        </div>
+    `
+  }).join("");
+  container3.innerHTML = html;
+})

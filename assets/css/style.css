@@ -46,10 +46,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-.search-box:hover > .input_search {
-    width: 240px;
-    padding: 0 6px;
-}
 /* BOTOES */
 .btn {
     height: 45px;

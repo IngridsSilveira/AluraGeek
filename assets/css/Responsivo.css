@@ -13,6 +13,9 @@
         background: var(--background-branco);
         left: 90%;
     }
+    .search-box:hover > .input_search {
+        width: 10px;
+    }
     .input_search {
         width: 0;
     }
@@ -74,6 +77,9 @@
     .search-box {
         width: 350px;
         left: 50%;
+    }
+    .search-box:hover > .input_search {
+        width: 240px;
     }
     .input_search {
         width: 300px;

@@ -1,5 +1,5 @@
 {
-  "produtos": [
+  "starWars": [
     {
       "id": 0,
       "nome": "Caneca Star Wars",
@@ -47,7 +47,9 @@
       "categoria": "starWars",
       "alt": "Product",
       "imageUrl": "https://raw.githubusercontent.com/IngridsSilveira/AluraGeek/main/assets/images/starWars/starWars06.png"
-    },
+    }],
+    
+    "consoles":[
     {
       "id": 6,
       "nome": "Controle Xbox One",
@@ -63,7 +65,7 @@
       "categoria": "consoles",
       "alt": "Product",
       "imageUrl": "https://raw.githubusercontent.com/IngridsSilveira/AluraGeek/main/assets/images/consoles/controleConsole.png"
-    },
+    }, 
     {
       "id": 8,
       "nome": "Console Nintendo",
@@ -96,7 +98,8 @@
       "categoria": "consoles",
       "alt": "Product",
       "imageUrl": "https://raw.githubusercontent.com/IngridsSilveira/AluraGeek/main/assets/images/consoles/gameBoy.png"
-    },
+    }],
+    "diversos":[
     {
       "id": 12,
       "nome": "Camisa Atari",

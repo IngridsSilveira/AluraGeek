@@ -11,7 +11,7 @@ fetch(link).then(resposta => resposta.json())
   const html = data.starWars
   .map(element =>{
     return `
-      <div class="card" ${element.categoria}>
+      <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
             <img class="images_home" src="${element.imageUrl}">
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
@@ -28,7 +28,7 @@ fetch(link).then(resposta => resposta.json())
   const html = data.consoles
   .map(element =>{
     return `
-      <div class="card" ${element.categoria}>
+      <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
             <img class="images_home" src="${element.imageUrl}">
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
@@ -46,7 +46,7 @@ fetch(link).then(resposta => resposta.json())
   const html = data.diversos
   .map(element =>{
     return `
-      <div class="card" ${element.categoria}>
+      <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
             <img class="images_home" src="${element.imageUrl}">
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>

@@ -7,6 +7,7 @@ fetch(link).then(resposta => resposta.json())
   const html = data.produtos
   .map(element =>{
     return `
+    <div class="card" data-card ${element.categoria}>
     <div class="produtos_itens" id="${element.id}">
     <img class="images_produto" src="${element.imageUrl}">
     <div class="modificarItem">
@@ -16,6 +17,7 @@ fetch(link).then(resposta => resposta.json())
     </div>
     <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
     <p class="produtos_preco">${element.price}</p>
+    </div>
     </div>
     `
 

@@ -30,6 +30,66 @@
     border: 1px solid red;
     padding: 5px;
 }
+
+/* MODAL */
+.modalContainer {
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: center;
+    display: none;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+}
+.active {
+    display: flex;
+    flex-direction: column;
+}
+.active .modal {
+    animation: modal .4s;
+    flex-direction: column;
+}
+
+.texto_modal {
+    margin: 10px auto;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btnOk {
+    background: #65864d !important;
+}
+.btnClose {
+    background: #c71818 !important;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /* RESPONSIO ESPECIFICO */
 @media screen and (min-width: 0) {
     .form,
@@ -37,11 +97,29 @@
     .btn_login {
         width: auto;
     }
+    .modal {
+        padding: 10px;
+        width: 80%;
+    }
+    span,
+    .btns button {
+        font-size: smaller;
+    }
+    .modalContainer {
+        width: auto;
+    }
 }
 @media screen and (min-width: 768px) {
     .input,
     .btn_login {
         width: auto;
+    }
+    .modalContainer {
+        width: 100vw;
+        align-items: center;
+    }
+    .modal {
+        width: 40%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -51,5 +129,12 @@
     .input,
     .btn_login {
         width: 100%;
+    }
+    .modalContainer {
+        width: 100vw;
+
+    }
+    .modal {
+        width: 30%;
     }
 }

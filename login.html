@@ -29,7 +29,7 @@
 
     </header>
         <section class="section_login">
-            <form class="form" action="produtos.html">
+            <form class="form">
                 <h2 class="titulo_padrao">Iniciar Sessão</h2>
                 
                 <div class="input-container">
@@ -44,6 +44,15 @@
 
                 <input class="btn btn_login" type="submit" value="Entrar">
             </form>
+            <div class="modalContainer">
+                <div class="modal">
+                    <p class="texto_modal">E-mail e Senha fornecidos estão incorretos!!</p>
+                    <div class="btns">
+                        <button class="btnOk" onclick="closeModal()">Ok</button>
+                        <button class="btnClose" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contato">
         <div class="info">
@@ -77,5 +86,6 @@
 
         <script src="js/app.js" type="module"></script>
         <script src="js/barraPesquisa.js"></script>
+        <script src="js/login.js"></script>
 </body>
 </html>

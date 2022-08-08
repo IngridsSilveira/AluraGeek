@@ -1,4 +1,5 @@
 const link = "produtos.json";
+const teste = 'https://my-json-server.typicode.com/ingridsSilveira/AluraGeek/starWars';
 
 const container = document.querySelector("[data-produtos-container]");
 
@@ -57,8 +58,8 @@ document.querySelectorAll('.editar').forEach(function(button){
 })
 })
 
-const criaProdutos = async (nome, imageUrl, price) => {
-    const resposta = await fetch(link, {
+const criaProdutos = (nome, imageUrl, price) => {
+    return fetch(teste, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -68,12 +69,13 @@ const criaProdutos = async (nome, imageUrl, price) => {
             imageUrl,
             price
         })
-    });
-    if (resposta.ok) {
-        return resposta.body;
-    } else {
-        throw new Error("Não foi possível criar o produto");
-    }
+    }).then(resposta => {
+        if (resposta.ok) {
+           return resposta.json();
+        } else {
+            throw new Error("Não foi possível criar o produto");
+        }
+    })
 }
 
 const form = document.querySelector("[data-form]");
@@ -81,12 +83,13 @@ const form = document.querySelector("[data-form]");
 form.addEventListener("submit", (evento) => {
     evento.preventDefault();
 
-    const nome = document.querySelector("[data-nome-produto]")
-    const preco = document.querySelector("[data-preco]")
-    const imagem = document.querySelector("[data-image]")
+    const nome = document.querySelector("[data-nome]").value
+    const preco = document.querySelector("[data-price]").value
+    const imagem = document.querySelector("[data-image]").value
 
     criaProdutos(nome, imagem, preco).then(resposta => {
-        window.location.href = "produtosHome.html";
+        window.location.pathname = "/produtosHome.html";
+        console.log(resposta)
     }).catch(err => {
         console.log(err)
     })

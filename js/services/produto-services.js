@@ -13,9 +13,9 @@ fetch(link).then(resposta => resposta.json())
     return `
       <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
-            <img class="images_home" src="${element.imageUrl}">
+            <img class="images_home" src="${element.imageUrl}" data-image>
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
-            <p class="preco_home">${element.price}</p>
+            <p class="preco_home" data-preco>${element.price}</p>
             <a href="#" class="links link">Ver produto</a>
             </div>
         </div>
@@ -30,9 +30,9 @@ fetch(link).then(resposta => resposta.json())
     return `
       <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
-            <img class="images_home" src="${element.imageUrl}">
+            <img class="images_home" src="${element.imageUrl}" data-image>
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
-            <p class="preco_home">${element.price}</p>
+            <p class="preco_home" data-preco>${element.price}</p>
             <a href="#" class="links link">Ver produto</a>
             </div>
         </div>
@@ -48,9 +48,9 @@ fetch(link).then(resposta => resposta.json())
     return `
       <div class="card" data-card ${element.categoria}>
             <div class="produtos_home" id="${element.id}">
-            <img class="images_home" src="${element.imageUrl}">
+            <img class="images_home" src="${element.imageUrl}" data-image>
             <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
-            <p class="preco_home">${element.price}</p>
+            <p class="preco_home" data-preco>${element.price}</p>
             <a href="#" class="links link">Ver produto</a>
             </div>
         </div>

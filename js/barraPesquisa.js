@@ -5,6 +5,12 @@ function search(){
 
     const nomeProdutos = document.querySelectorAll('[data-nome-produto]');
 
+    const background = document.querySelector(".section_inicial");
+    
+    const star = document.querySelector("[data-home-star]");
+    const consoles = document.querySelector("[data-home-consoles]");
+    const diversos = document.querySelector("[data-home-diversos]");
+
     for(var i = 0; nomeProdutos.length; i++){
         let teste = produtos[i].getElementsByTagName('h3')[0];
 
@@ -13,8 +19,16 @@ function search(){
 
             if(textoValue.toLocaleLowerCase().indexOf(input) > -1){
                 produtos[i].style.display = "";
+                background.style.display = "";
+                star.style.display = "";
+                consoles.style.display = "";
+                diversos.style.display = "";
             }else {
                 produtos[i].style.display = "none";
+                background.style.display = "none";
+                star.style.display = "none";
+                consoles.style.display = "none";
+                diversos.style.display = "none";
             }
         }
     }

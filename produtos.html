@@ -38,24 +38,19 @@
                     <div class="picture__input">
                         <img src="assets/images/icone-d-image-grise.png" alt="icone de imagem" class="img_input">
                         <label tabIndex="0" class="picture">
-                            <input type="file" class="picture_input" id="picture__input" data-image required>
-                            <span class="picture_image"></span>
+                            URL da Imagem
+                            <input type="text" class="picture_input" id="picture__input" data-image required>
                         </label>
                     </div>
                 </div>
                 <div class="input-container">
-                    <input class="input" minlength="20" name="nomeProdutos" type="text" placeholder="Nome do produto"
+                    <input class="input" minlength="" name="nomeProdutos" type="text" placeholder="Nome do produto"
                     data-tipo="nomeProdutos"  required data-nome>
                     <span class="error"></span>
                 </div>
 
                 <div class="input-container">
                     <input pattern="[0-9]*" class="input" name="precoProdutos" type="number" placeholder="Preço do produto" data-tipo="preco" required data-price>
-                    <span class="error"></span>
-                </div>
-
-                <div class="input-container">
-                    <input class="input" minlength="150" name="descricaoProdutos" type="text" placeholder="Descrição do produto" data-tipo="descricao" data-descricao>
                     <span class="error"></span>
                 </div>
 
@@ -90,10 +85,8 @@
         <footer class="rodape">
             <p>Desenvolvido por <a class="link" href="https://ingridssilveira.github.io/IngridSouza/">Ingrid de Souza</a> 🔥</p>
         </footer>
-
         <script src="js/app.js" type="module"></script>
-        <script src="js/inputFile.js"></script>
         <script src="js/barraPesquisa.js"></script>
-        <script src="js/services/produtos.js"></script>        
+        <script src="js/services/produtos.js"></script>     
 </body>
 </html>

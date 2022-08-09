@@ -1,96 +1,87 @@
-const link = "produtos.json";
-const teste = 'https://my-json-server.typicode.com/ingridsSilveira/AluraGeek/starWars';
+const link = "https://my-json-server.typicode.com/ingridsSilveira/digitalClock/produtos";
+const url = 'http://localhost:3000/produtos';
 
 const container = document.querySelector("[data-produtos-container]");
 
+let inputNome = document.querySelector("[data-nome]");
+let inputPrice = document.querySelector("[data-price]");
+let inputImage = document.querySelector("[data-image]");
+
+let data = "";
+
+//GET//
 fetch(link).then(resposta => resposta.json())
-.then(data =>{
-  const html = data.produtos
-  .map(element =>{
-    return `
-    <div class="card" data-card ${element.categoria}>
-    <div class="produtos_itens" id="${element.id}">
-    <img class="images_produto" src="${element.imageUrl}" data-image>
-    <div class="modificarItem">
-    <button class="deletar"><img class="images_modificarItem" src="assets/images/deletar.png" alt="icone de deletar"></button>
+.then(dados => pegandoDados(dados));
 
-    <button class="editar"><img class="images_modificarItem" src="assets/images/editar.png" alt="icone de editar"></button>
-    </div>
-    <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
-    <p class="produtos_preco" data-preco>${element.price}</p>
-    </div>
-    </div>
-    `
-
-  }).join("");
-  container.innerHTML = html;
-
-  
-const produtosItens = document.querySelectorAll('.produtos_itens');
-
-document.querySelectorAll('.deletar').forEach(function(button){
-    button.addEventListener("click", function(event){
-        const el = event.target;
-
-        const id = el.parentNode.parentNode.parentNode.id;  
-
-            for(let i = 0; i < produtosItens.length; i++){
-                if(produtosItens[i].id == id){
-                    produtosItens[i].remove();
-                }
-            }
-    })
-})
-
-//RESPONSÁVEL PELO BOTÃO DE EDITAR//
-document.querySelectorAll('.editar').forEach(function(button){
-    button.addEventListener("click", function(event){
-        const el = event.target;
-
-        const id = el.parentNode.parentNode.parentNode.id;  
-
-            for(let i = 0; i < produtosItens.length; i++){
-                if(produtosItens[i].id == id){
-                    window.location.href = "produtos.html";
-                }
-            }
-    })
-})
-})
-
-const criaProdutos = (nome, imageUrl, price) => {
-    return fetch(teste, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            nome,
-            imageUrl,
-            price
-        })
-    }).then(resposta => {
-        if (resposta.ok) {
-           return resposta.json();
-        } else {
-            throw new Error("Não foi possível criar o produto");
+//MODIFICANDO
+const modifica = () => {
+    container.addEventListener("click", (e) => {
+        e.preventDefault();
+    
+        let botaoDeletar = e.target.id == 'deletar';
+        let botaoEditar = e.target.id == 'editar';
+    
+        let id = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.dataset.id;
+        //DELETANDO//
+        if(botaoDeletar == botaoDeletar){
+            fetch(`${url}/${id}`,{
+                method: "DELETE",
+            })
+            .then(resposta => resposta.json())
+            .then(() => location.reload())
         }
+    //EDITANDO
+        if(botaoEditar == botaoEditar){
+            window.location.href = "produtos.html";
+        } 
+    }) 
+    }
+    //POST
+    const cria = () => {
+        document.querySelector("[data-form]").addEventListener("submit", (evento) => {
+        evento.preventDefault();
+    
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nome: inputNome.value,
+                price: inputPrice.value,
+                imageUrl: inputImage.value,
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            const dataArr = [];
+            dataArr.push(data);
+            pegandoDados(dataArr);
+        })
     })
+    }
+const pegandoDados = (dados) => {
+    dados.forEach(element => {
+        data += `
+            <div class="card" data-id=${element.id}>
+                <div class="produtos_itens" data-id=${element.id}>
+                <img class="images_produto" src="${element.imageUrl}" data-image>
+
+                <div class="modificarItem">
+                    <div>
+                        <button id="deletar" class="deletar"><img class="images_modificarItem" src="assets/images/deletar.png" alt="icone de deletar"></button>
+                    </div>
+
+                <button id="editar" class="editar"><img class="images_modificarItem" src="assets/images/editar.png" alt="icone de editar"></button>
+                </div>
+
+                <h3 class="produtos_titulo" data-nome-produto>${element.nome}</h3>
+                <p class="produtos_preco" data-preco>${element.price}</p>
+                </div>
+            </div>
+        `
+    })
+    container.innerHTML = data;
+    modifica()
 }
-
-const form = document.querySelector("[data-form]");
-
-form.addEventListener("submit", (evento) => {
-    evento.preventDefault();
-
-    const nome = document.querySelector("[data-nome]").value
-    const preco = document.querySelector("[data-price]").value
-    const imagem = document.querySelector("[data-image]").value
-
-    criaProdutos(nome, imagem, preco).then(resposta => {
-        window.location.pathname = "/produtosHome.html";
-        console.log(resposta)
-    }).catch(err => {
-        console.log(err)
-    })
-})
+cria()

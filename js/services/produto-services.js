@@ -1,4 +1,4 @@
-const link = "db.json";
+const link = "https://my-json-server.typicode.com/ingridsSilveira/AluraGeek/db";
 
 const container = document.querySelector("[data-container]");
 
